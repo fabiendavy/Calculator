@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Machine Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="calculator">
+
+        <div id="displayCalcul"></div>
+        <span id="delete" onclick="deleteNumber();">DEL</span>
+        <div id="display">0</div>
+
+        <div id="keyboard">
+            <div id="clear" class="button" onclick="setToZero();">AC</div>
+            <div id="divide" class="operation button" data-value=/ onclick="displayNumber(this);">/</div>
+            <div id="mutiple" class="operation button" data-value=* onclick="displayNumber(this);">x</div>
+
+            <div id="seven" class="button" data-value=7 onclick="displayNumber(this);">7</div>
+            <div id="eight" class="button" data-value=8 onclick="displayNumber(this);">8</div>
+            <div id="nine" class="button" data-value=9 onclick="displayNumber(this);">9</div>
+            <div id="substract" class="operation button" data-value=- onclick="displayNumber(this);">-</div>
+
+            <div id="four" class="button" data-value=4 onclick="displayNumber(this);">4</div>
+            <div id="five" class="button" data-value=5 onclick="displayNumber(this);">5</div>
+            <div id="six" class="button" data-value=6 onclick="displayNumber(this);">6</div>
+            <div id="add" class="operation button" data-value=+ onclick="displayNumber(this);">+</div>
+
+            <div id="one" class="button" data-value=1 onclick="displayNumber(this);">1</div>
+            <div id="two" class="button" data-value=2 onclick="displayNumber(this);">2</div>
+            <div id="three" class="button" data-value=3 onclick="displayNumber(this);">3</div>
+
+            <div id="zero" class="button" data-value=0 onclick="displayNumber(this);">0</div>
+            <div id="dot" class="button" data-value=. onclick="handlePoint();">.</div>
+            <div id="equal" class="button" onclick="equal();">=</div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
